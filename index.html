@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ITAcademy</title>
+</head>
+
+<body>
+
+	<h1>ITAcademy</h1>
+    <h2>Design &amp; Multimedia Department</h2>
+	
+	
+    
+
+<select onchange="MyChangeFunction(this.value)">
+    
+    <option>Print &amp; Graphic Design</option>
+    <option selected>Web Design</option>
+    <option>Video &amp; Motion Graphic Design</option>
+    <option>New Media Design</option>
+    
+</select>
+    
+    <br/><br/>
+    
+    <div id="div1"></div>
+    
+<script>
+    
+    function MyChangeFunction(smjer) {     
+    var div = document.getElementById("div1");
+    div.innerHTML = "Odabrali ste " + smjer + "!";   
+    } 
+    
+</script>
+	
+		
+</body>
+</html>
